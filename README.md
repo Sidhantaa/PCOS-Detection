@@ -45,19 +45,25 @@ Split:
 
 ### Problem Formulation
 
-* **Input:** Numerical and binary features related to hormones and clinical signs.
-* **Output:** Binary classification — whether the patient has PCOS.
-* **Models Used:**
-  - Logistic Regression (baseline)
-  - Random Forest (and a simplified version)
-* **Hyperparameters:** RandomForest with max_depth=3, n_estimators=3 for interpretability testing
+* The PCOS classification task is formulated as a supervised binary classification problem, where the input features consist of clinical measurements — Age, BMI, Menstrual Irregularity (binary), Testosterone Level, and Antral Follicle Count — and the output is a binary label (PCOS Diagnosis), where 1 represents a confirmed diagnosis of PCOS and 0 represents no diagnosis.
+* Since the dataset is fully labeled and relatively clean, no imputation or encoding was necessary. The data structure allowed us to directly apply classification models without extensive preprocessing.
+* Two models were implemented and evaluated:
+  * Logistic Regression: Chosen as a baseline model due to its simplicity, interpretability, and effectiveness on binary classification tasks.
+  * Random Forest Classifier: Used for its ability to handle non-linear relationships, robustness, and automatic feature selection.
+* In addition to these models, a smaller Random Forest (with fewer trees and limited depth) was trained to test whether a simpler model could perform comparably. This helped assess overfitting concerns.
+* To evaluate model generalization, we also applied 5-fold cross-validation on both classifiers and measured standard metrics including accuracy, precision, recall, F1-score, and confusion matrices.
 
 ### Training
 
-* Used `train_test_split` with stratify on target
-* Trained in Jupyter Notebook using scikit-learn on a MacBook Pro
-* Training time was negligible due to small dataset size
-* Used 5-fold cross-validation for both models
+* Model training was performed using Python with scikit-learn in a Jupyter Notebook environment on a local machine.
+* The dataset is small (1000 rows), so training time was minimal — both models completed training in under a second.
+* Key training details:
+  * No categorical encoding was needed, as all features were either binary or continuous.
+  * No epochs or iterative training loops were required — both models are deterministic and do not require gradient descent.
+  * Feature scaling was applied to continuous variables to improve the performance of Logistic Regression.
+* There were no significant preprocessing challenges. The high accuracy and clean structure of the dataset made this project an ideal demonstration of how basic machine learning models can be used effectively in binary health 
+  classification tasks.
+* * Used 5-fold cross-validation for both models
 
 ### Performance Comparison
 
