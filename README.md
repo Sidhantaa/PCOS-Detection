@@ -130,25 +130,24 @@ Scratch Notebooks (3 files):
 ---
 
 ### How to Reproduce Results & Software Setup
-* To reproduce the project results, open and run the `Notebook.ipynb` file inside the `Final Notebooks` folder. This notebook contains the full pipeline — from loading the data to model training, evaluation, and interpretation.
-* All results are generated from scratch. No pre-trained models or cached outputs are used.
-* Setup Instructions:
-  1. Clone the repo or download it as a ZIP.
-  2. Open `Notebook.ipynb` using Jupyter Notebook or VS Code.
-  3. Ensure `pcos_dataset.csv` (from the `scratch notebooks` folder) is present and properly loaded.
-
-* Required Python Libraries:
-- pandas  
-- numpy  
-- matplotlib  
-- seaborn  
-- scikit-learn  
-
-Install with:
+* To reproduce the results, simply run Notebook.ipynb in the Final Notebooks folder. It walks through the full pipeline — from loading the data to cleaning, visualization, modeling, and evaluation.
+* Everything runs from scratch — no pre-trained models or cached results.
+* Setup Instructions
+  1.Clone or download the repo.
+  2.Open Notebook.ipynb in Jupyter Notebook or VS Code.
+  3.Ensure the dataset pcos_dataset.csv (from Scratch Notebooks) is in the same folder or properly referenced.
+* Required Libraries
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+    
+* Install with:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-* Notes on Additional Files: df_head.txt, df_info.txt, and df_describe.txt are included to let you preview the dataset structure without rerunning code.
+* Notes on Text Files: df_head.txt, df_info.txt, and df_describe.txt are included to let you preview the dataset structure without rerunning code.
 
 ---
 
