@@ -37,17 +37,15 @@ Split:
 * No duplicated rows were present after manual inspection
 * Feature scaling was applied to continuous variables to support model training (Logistic Regression in particular)
 
-#### Data Visualization
+### Data Visualization
 
 <img width="1113" alt="Screenshot 2025-05-02 at 11 15 18 AM" src="https://github.com/user-attachments/assets/8eb907ee-6e0c-4dc8-9902-b842233fc98b" />
 Graph 1.1: Distribution of Numerical Features in the Dataset 
-
 
 <img width="1114" alt="Screenshot 2025-05-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/77d86f84-601b-4061-a0e6-7fb2dbdae4b0" />
 Graph 1.2: Distirbution of Numerication Features by PCOS Class
 
 ### Problem Formulation
-
 * The PCOS classification task is formulated as a supervised binary classification problem, where the input features consist of clinical measurements — Age, BMI, Menstrual Irregularity (binary), Testosterone Level, and Antral Follicle Count — and the output is a binary label (PCOS Diagnosis), where 1 represents a confirmed diagnosis of PCOS and 0 represents no diagnosis.
 * Since the dataset is fully labeled and relatively clean, no imputation or encoding was necessary. The data structure allowed us to directly apply classification models without extensive preprocessing.
 * Two models were implemented and evaluated:
@@ -57,7 +55,6 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 * To evaluate model generalization, we also applied 5-fold cross-validation on both classifiers and measured standard metrics including accuracy, precision, recall, F1-score, and confusion matrices.
 
 ### Training
-
 * Model training was performed using Python with scikit-learn in a Jupyter Notebook environment on a local machine.
 * The dataset is small (1000 rows), so training time was minimal — both models completed training in under a second.
 * Key training details:
@@ -101,7 +98,6 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 ---
 
 ### Future Work
-
 Drop BMI for a Different Modeling Perspective: Given how tightly BMI is linked to PCOS, future experiments could completely exclude BMI from the feature set. This would help determine whether other features alone can provide robust predictions, and evaluate model dependence on correlated variables.
 
 Introduce Additional Models: Explore other ensemble learning techniques like
