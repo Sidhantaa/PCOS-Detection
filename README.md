@@ -147,6 +147,8 @@ Scratch Notebooks (3 files):
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 
+
+
 * Notes on Text Files: df_head.txt, df_info.txt, and df_describe.txt are included to let you preview the dataset structure without rerunning code.
 
 ---
