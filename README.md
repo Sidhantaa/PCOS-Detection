@@ -33,12 +33,20 @@ Split:
 
 ### Data Visualization
 
+* Histograms with KDE curves were used to examine the distribution of each numerical feature. This helped us assess the spread, central tendency, and skewness of key variables like Age, BMI, Testosterone Level, Antral Follicle Count, and Menstrual Irregularity.
+  
 Graph 1.1: Distribution of Numerical Features in the Dataset 
 <img width="1113" alt="Screenshot 2025-05-02 at 11 15 18 AM" src="https://github.com/user-attachments/assets/8eb907ee-6e0c-4dc8-9902-b842233fc98b" />
 
 
 Graph 1.2: Distirbution of Numerication Features by PCOS Class
 <img width="1114" alt="Screenshot 2025-05-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/77d86f84-601b-4061-a0e6-7fb2dbdae4b0" />
+
+* Bar plots grouped by PCOS diagnosis were generated for visualizing how each feature behaves across PCOS-positive and PCOS-negative groups.
+* We observed that features like Menstrual Irregularity and Antral Follicle Count show clear separation between classes, making them highly predictive.
+* BMI showed overlapping distributions between PCOS and non-PCOS groups, suggesting it may be less discriminative and possibly redundant.
+* Visualizations guided later modeling decisions, including trying a model without BMI to test its impact.
+* All plots support the conclusion that the dataset contains well-separated classes, making it suitable for classification.
 
 ### Problem Formulation
 * The PCOS classification task is formulated as a supervised binary classification problem, where the input features consist of clinical measurements — Age, BMI, Menstrual Irregularity (binary), Testosterone Level, and Antral Follicle Count — and the output is a binary label (PCOS Diagnosis), where 1 represents a confirmed diagnosis of PCOS and 0 represents no diagnosis.
@@ -94,13 +102,13 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 ### Future Work
 * Drop BMI for a Different Modeling Perspective: Given how tightly BMI is linked to PCOS, future experiments could completely exclude BMI from the feature set. This would help determine whether other features alone can provide robust predictions, and evaluate model dependence on correlated variables.
 
-Introduce Additional Models: Explore other ensemble learning techniques like
-* Gradient Boosting
-* XGBoost
-* LightGBM
-These may offer enhanced generalization and potentially better performance on edge cases.
+* Introduce Additional Models: Explore other ensemble learning techniques like
+  * Gradient Boosting
+  * XGBoost
+  * LightGBM
+  These may offer enhanced generalization and potentially better performance on edge cases.
 
-External Validation: To confirm generalizability, the current models can be evaluated on external clinical datasets with different patient distributions or additional biomarkers, simulating real-world application better.
+* External Validation: To confirm generalizability, the current models can be evaluated on external clinical datasets with different patient distributions or additional biomarkers.
 
 ---
 
