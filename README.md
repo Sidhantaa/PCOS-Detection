@@ -130,26 +130,25 @@ Scratch Notebooks (3 files):
 ---
 
 ### How to Reproduce Results & Software Setup
-To reproduce all results in this project, run the Jupyter notebook Notebook.ipynb located in the Final Notebooks folder. This notebook walks through the entire pipeline — from loading the dataset to preprocessing, visualization, model training, evaluation, and cross-validation.
+* To reproduce the project results, open and run the `Notebook.ipynb` file inside the `Final Notebooks` folder. This notebook contains the full pipeline — from loading the data to model training, evaluation, and interpretation.
+* All results are generated from scratch. No pre-trained models or cached outputs are used.
+* Setup Instructions:
+  1. Clone the repo or download it as a ZIP.
+  2. Open `Notebook.ipynb` using Jupyter Notebook or VS Code.
+  3. Ensure `pcos_dataset.csv` (from the `scratch notebooks` folder) is present and properly loaded.
 
-No pre-trained models or cached results are used; everything runs from scratch and is fully documented with markdown explanations throughout the notebook.
+* Required Python Libraries:
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn  
 
-Setup Instructions:
-* Clone the repository or download the ZIP.
-* Open and run Notebook.ipynb in Jupyter Notebook or Visual Studio Code.
-* Make sure the dataset pcos_dataset.csv (from the scratch notebooks folder) is present and in the same directory or properly loaded.
+Install with:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
 
-Required Python libraries:
-* pandas
-* numpy
-* matplotlib
-* seaborn
-* scikit-learn
-* Can be installed with:
-  ```bash
-  pip install pandas numpy matplotlib scikit-learn
-
-Notes on Additional Files:The text files df_head.txt, df_info.txt, and df_describe.txt are included to help quickly inspect the dataset structure without needing to load the notebook.
+* Notes on Additional Files: df_head.txt, df_info.txt, and df_describe.txt are included to let you preview the dataset structure without rerunning code.
 
 ---
 
