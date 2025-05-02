@@ -2,8 +2,6 @@
 
 # PCOS Detection using Binary ML Models
 
-# Binary Classification of PCOS Diagnosis Using Machine Learning
-
 * **One Sentence Summary**  
 This project uses machine learning models to predict whether a patient has PCOS or not using clinical features from a Kaggle tabular dataset.  
 [Kaggle Dataset Link](https://www.kaggle.com/datasets/samikshadalvi/pcos-diagnosis-dataset)
@@ -17,7 +15,7 @@ This project uses machine learning models to predict whether a patient has PCOS 
 * **Performance:** 
   - Logistic Regression: ~91.5% accuracy  
   - Random Forest: 100% accuracy (with further checks for overfitting using smaller trees and cross-validation)
-
+    
 ---
 
 ## Summary of Workdone
