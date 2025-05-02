@@ -1,6 +1,6 @@
 ![](UTA-DataScience-Logo.png)
 
-# PCOS Detection
+# Binary Classification of PCOS Diagnosis Using Machine Learning 
 
 * **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
 "Get Rich" Kaggle challenge (provide link). 
