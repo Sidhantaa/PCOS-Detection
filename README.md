@@ -90,11 +90,11 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 
 ### Conclusions
 * The PCOS dataset was clean, numerical, and well-structured, requiring minimal preprocessing. Key features like Menstrual Irregularity and Antral Follicle Count showed strong correlation with the diagnosis label, allowing even simple models to perform well.
-* Both Logistic Regression and Random Forest models were trained and evaluated. Logistic Regression, as a baseline, achieved ~91.5% accuracy. The Random Forest achieved perfect performance (100% accuracy), raising overfitting concerns — which were addressed by training a smaller Random Forest (3 trees, max depth 3). This smaller model still achieved ~99.5% accuracy, proving the dataset's high separability and the effectiveness of its features.
+* Both Logistic Regression and Random Forest models were trained and evaluated. Logistic Regression, as a baseline, achieved ~91.5% accuracy. The Random Forest achieved perfect performance (100% accuracy), raising overfitting concerns — which were addressed by **training a smaller Random Forest (3 trees, max depth 3)**. This smaller model still **achieved ~99.5% accuracy**, proving the dataset's high separability and the effectiveness of its features.
 * 5-Fold Cross Validation showed strong consistency:
   * Random Forest: ~0.9975 mean accuracy
   * Logistic Regression: ~0.91 mean accuracy
-* To improve interpretability, we visualized a decision tree from the small forest, confirming Menstrual Irregularity and BMI as top decision features.
+* To improve interpretability, we **visualized a decision tree from the small forest, confirming Menstrual Irregularity and BMI as top decision features**.
 * Overall, the project demonstrates how well-designed clinical features, even in a small dataset, can lead to highly accurate and interpretable machine learning models for health prediction tasks.
 
 ---
