@@ -49,13 +49,13 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 * All plots support the conclusion that the dataset contains well-separated classes, making it suitable for classification.
 
 ### Problem Formulation
-* The PCOS classification task is formulated as a supervised binary classification problem, where the input features consist of clinical measurements — Age, BMI, Menstrual Irregularity (binary), Testosterone Level, and Antral Follicle Count — and the output is a binary label (PCOS Diagnosis), where 1 represents a confirmed diagnosis of PCOS and 0 represents no diagnosis.
-* Since the dataset is fully labeled and relatively clean, no imputation or encoding was necessary. The data structure allowed us to directly apply classification models without extensive preprocessing.
-* Two models were implemented and evaluated:
-  * Logistic Regression: Chosen as a baseline model due to its simplicity, interpretability, and effectiveness on binary classification tasks.
-  * Random Forest Classifier: Used for its ability to handle non-linear relationships, robustness, and automatic feature selection.
-* In addition to these models, a smaller Random Forest (with fewer trees and limited depth) was trained to test whether a simpler model could perform comparably. This helped assess overfitting concerns.
-* To evaluate model generalization, we also applied 5-fold cross-validation on both classifiers and measured standard metrics including accuracy, precision, recall, F1-score, and confusion matrices.
+* This project aims to predict PCOS (Polycystic Ovary Syndrome) using five clinical features: Age, BMI, Menstrual Irregularity, Testosterone Level, and Antral Follicle Count. The target is binary: 1 for PCOS, 0 for non-PCOS.
+* Since the dataset was already clean and numeric, no imputation or encoding was required — we could directly train classification models.
+* We tested two main models:
+  * Logistic Regression: A simple, interpretable baseline.
+  * Random Forest: A more flexible model that handles non-linear patterns and ranks feature importance.
+* To check if model complexity was necessary, we also trained a small Random Forest with just 3 trees and shallow depth. It still performed well, helping rule out overfitting concerns.
+* Finally, 5-fold cross-validation was used to test generalization across splits, and we evaluated models using accuracy, precision, recall, F1 score, and confusion matrices.
 
 ### Training
 * Model training was performed using Python with scikit-learn in a Jupyter Notebook environment on a local machine.
@@ -153,6 +153,8 @@ Required Python libraries:
   pip install pandas numpy matplotlib scikit-learn
 
 Notes on Additional Files:The text files df_head.txt, df_info.txt, and df_describe.txt are included to help quickly inspect the dataset structure without needing to load the notebook.
+
+---
 
 ### Citations
 * Kaggle[Link](https://www.kaggle.com/datasets/samikshadalvi/pcos-diagnosis-dataset)
