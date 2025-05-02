@@ -72,17 +72,17 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 
 ### Performance Comparison
 
-##### Logistic regression
+#### Logistic regression
 * Accuracy: 91%
 * Classification Report
 <img width="460" alt="Screenshot 2025-05-02 at 10 35 16 AM" src="https://github.com/user-attachments/assets/b1ce5ac5-d78f-413d-a9c2-8df71d4959db" />
 
-###### Random Forest 
+##### Random Forest 
 * Accuracy: 100%
 * Classification Report
 <img width="453" alt="Screenshot 2025-05-02 at 10 35 52 AM" src="https://github.com/user-attachments/assets/239ce6f4-6abc-427c-99a5-75f75bcf3424" />
 
-###### Random Forest with max_depth = 3
+##### Random Forest with max_depth = 3
 * Accuracy: 99.5%
 * Classification Report
 <img width="450" alt="Screenshot 2025-05-02 at 10 39 27 AM" src="https://github.com/user-attachments/assets/83829087-4232-4d4d-8af0-13f4b983a13b" />
