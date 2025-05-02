@@ -115,23 +115,22 @@ Note: The scratch notebooks folder contains unpolished code meant for brainstorm
 
 ### Software Setup
 
-How to Reproduce Results
+How to Reproduce Results: 
 To reproduce all results in this project, run the Jupyter notebook Notebook.ipynb located in the Final Notebooks folder. This notebook walks through the entire pipeline — from loading the dataset to preprocessing, visualization, model training, evaluation, and cross-validation.
 
 No pre-trained models or cached results are used; everything runs from scratch and is fully documented with markdown explanations throughout the notebook.
 
 Setup Instructions:
-*Clone the repository or download the ZIP.
-*Open and run Notebook.ipynb in Jupyter Notebook or Visual Studio Code.
-*Make sure the dataset pcos_dataset.csv (from the scratch notebooks folder) is present and in the same directory or properly loaded.
+* Clone the repository or download the ZIP.
+* Open and run Notebook.ipynb in Jupyter Notebook or Visual Studio Code.
+* Make sure the dataset pcos_dataset.csv (from the scratch notebooks folder) is present and in the same directory or properly loaded.
 
 Required Python libraries:
-*pandas
-*numpy
-*matplotlib
-*seaborn
-*scikit-learn
-
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* scikit-learn
 * Can be installed with:
   ```bash
   pip install pandas numpy matplotlib scikit-learn
