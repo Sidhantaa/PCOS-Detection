@@ -85,14 +85,6 @@ The dataset was split 80/20 into training and testing sets. Both models were eva
 
 ---
 
-## How to Reproduce Results
-
-* Run `project.ipynb` from top to bottom in a Jupyter environment.
-* Make sure the dataset file (`pcos_dataset.csv`) is in the same directory.
-* All code uses standard libraries from scikit-learn, pandas, matplotlib.
-
----
-
 ### Overview of Files in Repository
 This repository is structured into two main folders: Final Notebooks and Scratch Notebooks.
 
@@ -113,7 +105,7 @@ Note: The scratch notebooks folder contains unpolished code meant for brainstorm
 
 ---
 
-### Software Setup
+### How to Reproduce Results and Software Setup
 
 How to Reproduce Results: 
 To reproduce all results in this project, run the Jupyter notebook Notebook.ipynb located in the Final Notebooks folder. This notebook walks through the entire pipeline — from loading the dataset to preprocessing, visualization, model training, evaluation, and cross-validation.
