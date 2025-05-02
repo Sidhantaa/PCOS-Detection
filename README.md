@@ -40,9 +40,8 @@ Split:
 * Feature scaling was applied to continuous variables to support model training (Logistic Regression in particular)
 
 #### Data Visualization
-* Bar plots for binary features like `Menstrual_Irregularity`
-* Box plots and histograms for numerical features
-* Correlation heatmap to identify strong predictors
+
+
 
 ### Problem Formulation
 
@@ -62,13 +61,23 @@ Split:
 
 ### Performance Comparison
 
-| Model              | Accuracy | F1 Score | Precision | Recall |
-|-------------------|----------|----------|-----------|--------|
-| Logistic Regression | 91.5%   | 0.80     | 0.76      | 0.85   |
-| Random Forest       | 100%    | 1.00     | 1.00      | 1.00   |
+##### Logistic regression
+* Accuracy: 
+* Classification Report
+<img width="460" alt="Screenshot 2025-05-02 at 10 35 16 AM" src="https://github.com/user-attachments/assets/b1ce5ac5-d78f-413d-a9c2-8df71d4959db" />
+
+###### Random Forest 
+* Accuracy: 
+* Classification Report
+<img width="453" alt="Screenshot 2025-05-02 at 10 35 52 AM" src="https://github.com/user-attachments/assets/239ce6f4-6abc-427c-99a5-75f75bcf3424" />
+
+
+###### Random Forest with max_depth = 3
+* Accuracy: 
+* Classification Report
+<img width="450" alt="Screenshot 2025-05-02 at 10 39 27 AM" src="https://github.com/user-attachments/assets/83829087-4232-4d4d-8af0-13f4b983a13b" />
 
 * ROC curves not generated, but confusion matrices used to visualize class performance.
-
 ---
 
 ### Conclusions
