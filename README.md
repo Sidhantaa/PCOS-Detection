@@ -92,7 +92,7 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 ---
 
 ### Future Work
-Drop BMI for a Different Modeling Perspective: Given how tightly BMI is linked to PCOS, future experiments could completely exclude BMI from the feature set. This would help determine whether other features alone can provide robust predictions, and evaluate model dependence on correlated variables.
+* Drop BMI for a Different Modeling Perspective: Given how tightly BMI is linked to PCOS, future experiments could completely exclude BMI from the feature set. This would help determine whether other features alone can provide robust predictions, and evaluate model dependence on correlated variables.
 
 Introduce Additional Models: Explore other ensemble learning techniques like
 * Gradient Boosting
@@ -100,11 +100,7 @@ Introduce Additional Models: Explore other ensemble learning techniques like
 * LightGBM
 These may offer enhanced generalization and potentially better performance on edge cases.
 
-Feature Importance Techniques: Use permutation importance, SHAP values, or model-based feature selection to quantitatively determine the contribution of each feature, beyond what decision trees visually suggest.
-
 External Validation: To confirm generalizability, the current models can be evaluated on external clinical datasets with different patient distributions or additional biomarkers, simulating real-world application better.
-
-Automated Hyperparameter Tuning: GridSearchCV or RandomizedSearchCV could be introduced for both Logistic Regression and Random Forest to systematically find optimal model configurations instead of using fixed parameters.
 
 ---
 
@@ -129,8 +125,6 @@ Note: The scratch notebooks folder contains unpolished code meant for brainstorm
 ---
 
 ### How to Reproduce Results & Software Setup
-
-How to Reproduce Results: 
 To reproduce all results in this project, run the Jupyter notebook Notebook.ipynb located in the Final Notebooks folder. This notebook walks through the entire pipeline — from loading the dataset to preprocessing, visualization, model training, evaluation, and cross-validation.
 
 No pre-trained models or cached results are used; everything runs from scratch and is fully documented with markdown explanations throughout the notebook.
