@@ -113,23 +113,20 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 ---
 
 ### Overview of Files in Repository
-This repository is structured into two main folders: Final Notebooks and Scratch Notebooks.
 
-Final Notebooks: This folder contains the polished version of the project notebook and relevant outputs:
-Total files: 4
-* Notebook.ipynb – Main Jupyter notebook containing full implementation, from data preprocessing to model training, evaluation, and interpretation. This is the primary file to reproduce results.
-* df_head.txt – Output of df.head() used to show the first few rows of the dataset.
-* df_describe.txt – Output of df.describe() summarizing statistical metrics (mean, std, min, max, etc.).
-* df_info.txt – Output of df.info() showing column data types and non-null counts.
+The project is organized into two folders: Final Notebooks and Scratch Notebooks.
 
-Scratch notebooks: This folder holds preliminary or experimental work
-Total files: 3
-* scratch-notebook1.ipynb – Early-stage exploration and initial visualization of the dataset.
-* scratch-notebook2.ipynb – Intermediate attempts at cleaning, feature selection, or comparing different model results.
-* pcos_dataset.csv – The original dataset used for this project, sourced from Kaggle.
+Final Notebooks (4 files):
+* Notebook.ipynb – Full project implementation: preprocessing, modeling, evaluation.
+* df_head.txt – Output of the first few rows of the dataset.
+* df_describe.txt – Summary stats like mean, min, max, etc.
+* df_info.txt – Dataset structure: column types and null counts.
 
-Note: The scratch notebooks folder contains unpolished code meant for brainstorming and iterative development. For the complete and finalized implementation, refer to the Notebook.ipynb in the Final Notebooks folder.
-
+Scratch Notebooks (3 files):
+* scratch-notebook1.ipynb – Initial data exploration and plotting.
+* scratch-notebook2.ipynb – Trial runs, feature testing, model drafts.
+* pcos_dataset.csv – Source dataset from Kaggle.
+  
 ---
 
 ### How to Reproduce Results & Software Setup
