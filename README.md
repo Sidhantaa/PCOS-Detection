@@ -42,6 +42,7 @@ Split:
 <img width="1113" alt="Screenshot 2025-05-02 at 11 15 18 AM" src="https://github.com/user-attachments/assets/8eb907ee-6e0c-4dc8-9902-b842233fc98b" />
 Graph 1.1: Distribution of Numerical Features in the Dataset 
 
+
 <img width="1114" alt="Screenshot 2025-05-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/77d86f84-601b-4061-a0e6-7fb2dbdae4b0" />
 Graph 1.2: Distirbution of Numerication Features by PCOS Class
 
@@ -76,7 +77,6 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 * Accuracy: 100%
 * Classification Report
 <img width="453" alt="Screenshot 2025-05-02 at 10 35 52 AM" src="https://github.com/user-attachments/assets/239ce6f4-6abc-427c-99a5-75f75bcf3424" />
-
 
 ###### Random Forest with max_depth = 3
 * Accuracy: 99.5%
@@ -159,6 +159,6 @@ Required Python libraries:
 Notes on Additional Files:The text files df_head.txt, df_info.txt, and df_describe.txt are included to help quickly inspect the dataset structure without needing to load the notebook.
 
 ### Citations
-* https://www.kaggle.com/datasets/samikshadalvi/pcos-diagnosis-dataset
-* https://www.ncbi.nlm.nih.gov/books/NBK459251/
+* Kaggle[Link](https://www.kaggle.com/datasets/samikshadalvi/pcos-diagnosis-dataset)
+* PCOS-National Library of Medicine[Link](https://www.ncbi.nlm.nih.gov/books/NBK459251/)
   
