@@ -70,20 +70,32 @@ The dataset was split 80/20 into training and testing sets. Both models were eva
 ---
 
 ### Conclusions
-
-* Both models performed well; Random Forest gave perfect results but showed signs of potential overfitting.
-* Even a very small tree model achieved ~99.5%, indicating strong signal in the data.
-* Features like `Menstrual_Irregularity` were near-perfect predictors.
+* The PCOS dataset was clean, numerical, and well-structured, requiring minimal preprocessing. Key features like Menstrual Irregularity and Antral Follicle Count showed strong correlation with the diagnosis label, allowing even simple models to perform well.
+* Both Logistic Regression and Random Forest models were trained and evaluated. Logistic Regression, as a baseline, achieved ~91.5% accuracy. The Random Forest achieved perfect performance (100% accuracy), raising overfitting concerns — which were addressed by training a smaller Random Forest (3 trees, max depth 3). This smaller model still achieved ~99.5% accuracy, proving the dataset's high separability and the effectiveness of its features.
+* 5-Fold Cross Validation showed strong consistency:
+  * Random Forest: ~0.9975 mean accuracy
+  * Logistic Regression: ~0.91 mean accuracy
+* To improve interpretability, we visualized a decision tree from the small forest, confirming Menstrual Irregularity and BMI as top decision features.
+* Overall, the project demonstrates how well-designed clinical features, even in a small dataset, can lead to highly accurate and interpretable machine learning models for health prediction tasks.
 
 ---
 
 ### Future Work
 
-* Try external validation or test on a new PCOS dataset.
-* Consider clinical deployment — using decision trees to explain predictions to doctors.
-* Explore SHAP values or feature importance visualizations for model transparency.
+Drop BMI for a Different Modeling Perspective: Given how tightly BMI is linked to PCOS, future experiments could completely exclude BMI from the feature set. This would help determine whether other features alone can provide robust predictions, and evaluate model dependence on correlated variables.
 
----
+Introduce Additional Models: Explore other ensemble learning techniques like
+* Gradient Boosting
+* XGBoost
+* LightGBM
+These may offer enhanced generalization and potentially better performance on edge cases.
+
+Feature Importance Techniques: Use permutation importance, SHAP values, or model-based feature selection to quantitatively determine the contribution of each feature, beyond what decision trees visually suggest.
+
+External Validation: To confirm generalizability, the current models can be evaluated on external clinical datasets with different patient distributions or additional biomarkers, simulating real-world application better.
+
+Automated Hyperparameter Tuning: GridSearchCV or RandomizedSearchCV could be introduced for both Logistic Regression and Random Forest to systematically find optimal model configurations instead of using fixed parameters.
+
 
 ### Overview of Files in Repository
 This repository is structured into two main folders: Final Notebooks and Scratch Notebooks.
