@@ -44,8 +44,6 @@ Split:
 * Box plots and histograms for numerical features
 * Correlation heatmap to identify strong predictors
 
----
-
 ### Problem Formulation
 
 * **Input:** Numerical and binary features related to hormones and clinical signs.
@@ -55,16 +53,12 @@ Split:
   - Random Forest (and a simplified version)
 * **Hyperparameters:** RandomForest with max_depth=3, n_estimators=3 for interpretability testing
 
----
-
 ### Training
 
 * Used `train_test_split` with stratify on target
 * Trained in Jupyter Notebook using scikit-learn on a MacBook Pro
 * Training time was negligible due to small dataset size
 * Used 5-fold cross-validation for both models
-
----
 
 ### Performance Comparison
 
@@ -104,6 +98,7 @@ External Validation: To confirm generalizability, the current models can be eval
 
 Automated Hyperparameter Tuning: GridSearchCV or RandomizedSearchCV could be introduced for both Logistic Regression and Random Forest to systematically find optimal model configurations instead of using fixed parameters.
 
+---
 
 ### Overview of Files in Repository
 This repository is structured into two main folders: Final Notebooks and Scratch Notebooks.
