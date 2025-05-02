@@ -1,7 +1,7 @@
 ![](UTA-DataScience-Logo.png)
 
 # PCOS Detection using Binary ML Models
-This project uses machine learning models to predict whether a patient has PCOS or not using clinical features from a Kaggle tabular dataset.  
+***This project uses machine learning models to predict whether a patient has PCOS or not using clinical features from a Kaggle tabular dataset.***  
 
 ---
 
