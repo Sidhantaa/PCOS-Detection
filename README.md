@@ -115,15 +115,25 @@ Note: The scratch notebooks folder contains unpolished code meant for brainstorm
 
 ### Software Setup
 
-* Python 3.9+
-* Required packages:
-  - pandas
-  - numpy
-  - matplotlib
-  - scikit-learn
+How to Reproduce Results
+To reproduce all results in this project, run the Jupyter notebook Notebook.ipynb located in the Final Notebooks folder. This notebook walks through the entire pipeline — from loading the dataset to preprocessing, visualization, model training, evaluation, and cross-validation.
+
+No pre-trained models or cached results are used; everything runs from scratch and is fully documented with markdown explanations throughout the notebook.
+
+Setup Instructions:
+*Clone the repository or download the ZIP.
+*Open and run Notebook.ipynb in Jupyter Notebook or Visual Studio Code.
+*Make sure the dataset pcos_dataset.csv (from the scratch notebooks folder) is present and in the same directory or properly loaded.
+
+Required Python libraries:
+*pandas
+*numpy
+*matplotlib
+*seaborn
+*scikit-learn
+
 * Can be installed with:
   ```bash
   pip install pandas numpy matplotlib scikit-learn
 
-
-
+Notes on Additional Files:The text files df_head.txt, df_info.txt, and df_describe.txt are included to help quickly inspect the dataset structure without needing to load the notebook.
