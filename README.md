@@ -77,7 +77,7 @@ Graph 1.2: Distirbution of Numerication Features by PCOS Class
 * Classification Report
 <img width="450" alt="Screenshot 2025-05-02 at 10 39 27 AM" src="https://github.com/user-attachments/assets/83829087-4232-4d4d-8af0-13f4b983a13b" />
 
-* ROC curves not generated, but confusion matrices used to visualize class performance.
+* ROC curves not generated, but confusion matrices used to visualize class performance(in Notebook).
 ---
 
 ### Conclusions
