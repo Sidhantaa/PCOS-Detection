@@ -39,12 +39,12 @@ Split:
 
 ### Data Visualization
 
-<img width="1113" alt="Screenshot 2025-05-02 at 11 15 18 AM" src="https://github.com/user-attachments/assets/8eb907ee-6e0c-4dc8-9902-b842233fc98b" />
 Graph 1.1: Distribution of Numerical Features in the Dataset 
+<img width="1113" alt="Screenshot 2025-05-02 at 11 15 18 AM" src="https://github.com/user-attachments/assets/8eb907ee-6e0c-4dc8-9902-b842233fc98b" />
 
 
-<img width="1114" alt="Screenshot 2025-05-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/77d86f84-601b-4061-a0e6-7fb2dbdae4b0" />
 Graph 1.2: Distirbution of Numerication Features by PCOS Class
+<img width="1114" alt="Screenshot 2025-05-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/77d86f84-601b-4061-a0e6-7fb2dbdae4b0" />
 
 ### Problem Formulation
 * The PCOS classification task is formulated as a supervised binary classification problem, where the input features consist of clinical measurements — Age, BMI, Menstrual Irregularity (binary), Testosterone Level, and Antral Follicle Count — and the output is a binary label (PCOS Diagnosis), where 1 represents a confirmed diagnosis of PCOS and 0 represents no diagnosis.
