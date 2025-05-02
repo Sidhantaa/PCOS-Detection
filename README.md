@@ -21,15 +21,23 @@ The dataset was split 80/20 into training and testing sets. Both models were eva
 ## Summary of Workdone
 
 ### Data
-* **Type:** CSV file containing patient health data; output is a binary class: PCOS = 1 or 0.
-* **Size:** 1000 rows × ~6 columns (before and after cleaning
-* **Split:** 80% train, 20% test using stratified sampling to preserve class balance.
+* Type: CSV file from Kaggle
+* Input: Clinical indicators including Age, BMI, Menstrual Irregularity, Testosterone Level, and Antral Follicle Count
+* Output: Binary label (PCOS Diagnosis) — 1 indicates PCOS, 0 indicates no PCOS
+* Size: 1000 patient records with 6 columns total
 
-#### Preprocessing / Clean up
-* Removed whitespace from column names.
-* There were no duplicate or unbalances rows 
-* No missing values in dataset.
-* Scaled numerical features using StandardScaler.
+Split:
+* 80% for training (800 samples)
+* 20% for testing (200 samples)
+
+5-Fold Cross-Validation was applied to assess model consistency
+
+### Preprocessing / Cleanup
+* No missing values were found in the dataset, so no imputation was needed
+* Removed any unnamed or ID columns that did not contribute to learning
+* All features were already numerical (either binary or continuous), so no encoding was necessary
+* No duplicated rows were present after manual inspection
+* Feature scaling was applied to continuous variables to support model training (Logistic Regression in particular)
 
 #### Data Visualization
 * Bar plots for binary features like `Menstrual_Irregularity`
