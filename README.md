@@ -35,11 +35,7 @@ Split:
 
 * Histograms with KDE curves were used to examine the distribution of each numerical feature. This helped us assess the spread, central tendency, and skewness of key variables like Age, BMI, Testosterone Level, Antral Follicle Count, and Menstrual Irregularity.
   
-Graph 1.1: Distribution of Numerical Features in the Dataset 
-<img width="1113" alt="Screenshot 2025-05-02 at 11 15 18 AM" src="https://github.com/user-attachments/assets/8eb907ee-6e0c-4dc8-9902-b842233fc98b" />
-
-
-Graph 1.2: Distirbution of Numerication Features by PCOS Class
+Graph 1.1: Distirbution of Numerication Features by PCOS Class
 <img width="1114" alt="Screenshot 2025-05-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/77d86f84-601b-4061-a0e6-7fb2dbdae4b0" />
 
 * Bar plots grouped by PCOS diagnosis were generated for visualizing how each feature behaves across PCOS-positive and PCOS-negative groups.
