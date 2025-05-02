@@ -21,12 +21,12 @@ This project uses machine learning models to predict whether a patient has PCOS 
 
 ### Data
 * **Type:** CSV file containing patient health data; output is a binary class: PCOS = 1 or 0.
-* **Size:** 1000 rows × ~13 columns after cleaning.
+* **Size:** 1000 rows × ~6 columns (before and after cleaning
 * **Split:** 80% train, 20% test using stratified sampling to preserve class balance.
 
 #### Preprocessing / Clean up
 * Removed whitespace from column names.
-* Dropped duplicate or unlabeled rows if any.
+* There were no duplicate or unbalances rows 
 * No missing values in dataset.
 * Scaled numerical features using StandardScaler.
 
