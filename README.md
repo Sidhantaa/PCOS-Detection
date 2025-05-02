@@ -1,9 +1,7 @@
 ![](UTA-DataScience-Logo.png)
 
 # PCOS Detection using Binary ML Models
-
 This project uses machine learning models to predict whether a patient has PCOS or not using clinical features from a Kaggle tabular dataset.  
-[Kaggle Dataset Link](https://www.kaggle.com/datasets/samikshadalvi/pcos-diagnosis-dataset)
 
 ---
 
@@ -18,7 +16,7 @@ The dataset was split 80/20 into training and testing sets. Both models were eva
     
 ---
 
-## Summary of Workdone
+## Summary of Work Done
 
 ### Data
 * Type: CSV file from Kaggle
@@ -41,7 +39,12 @@ Split:
 
 #### Data Visualization
 
+<img width="1113" alt="Screenshot 2025-05-02 at 11 15 18 AM" src="https://github.com/user-attachments/assets/8eb907ee-6e0c-4dc8-9902-b842233fc98b" />
+Graph 1.1: Distribution of Numerical Features in the Dataset 
 
+
+<img width="1114" alt="Screenshot 2025-05-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/77d86f84-601b-4061-a0e6-7fb2dbdae4b0" />
+Graph 1.2: Distirbution of Numerication Features by PCOS Class
 
 ### Problem Formulation
 
@@ -68,18 +71,18 @@ Split:
 ### Performance Comparison
 
 ##### Logistic regression
-* Accuracy: 
+* Accuracy: 91%
 * Classification Report
 <img width="460" alt="Screenshot 2025-05-02 at 10 35 16 AM" src="https://github.com/user-attachments/assets/b1ce5ac5-d78f-413d-a9c2-8df71d4959db" />
 
 ###### Random Forest 
-* Accuracy: 
+* Accuracy: 100%
 * Classification Report
 <img width="453" alt="Screenshot 2025-05-02 at 10 35 52 AM" src="https://github.com/user-attachments/assets/239ce6f4-6abc-427c-99a5-75f75bcf3424" />
 
 
 ###### Random Forest with max_depth = 3
-* Accuracy: 
+* Accuracy: 99.5%
 * Classification Report
 <img width="450" alt="Screenshot 2025-05-02 at 10 39 27 AM" src="https://github.com/user-attachments/assets/83829087-4232-4d4d-8af0-13f4b983a13b" />
 
@@ -158,3 +161,8 @@ Required Python libraries:
   pip install pandas numpy matplotlib scikit-learn
 
 Notes on Additional Files:The text files df_head.txt, df_info.txt, and df_describe.txt are included to help quickly inspect the dataset structure without needing to load the notebook.
+
+### Citations
+* https://www.kaggle.com/datasets/samikshadalvi/pcos-diagnosis-dataset
+* https://www.ncbi.nlm.nih.gov/books/NBK459251/
+  
