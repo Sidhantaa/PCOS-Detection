@@ -9,9 +9,7 @@ This project uses machine learning models to predict whether a patient has PCOS 
 
 ## Overview
 
-The goal of this project is to predict whether a patient has Polycystic Ovary Syndrome (PCOS) using clinical features and supervised machine learning. The dataset, sourced from Kaggle, includes 1,000 patient records with numerical features such as Age, BMI, Testosterone Level, Antral Follicle Count, and a binary feature for Menstrual Irregularity. The target variable is PCOS_Diagnosis (1 = PCOS, 0 = No PCOS), making this a binary classification task.
-
-This project investigates how well these features predict PCOS and how interpretable, reliable models can be built for healthcare applications. While features like Menstrual Irregularity and Antral Follicle Count showed strong correlations with PCOS, others such as BMI were less informative, prompting further experiments without them.
+The goal of this project is to predict whether a patient has Polycystic Ovary Syndrome (PCOS) using clinical features and supervised machine learning. The dataset, sourced from Kaggle, includes 1,000 patient records with numerical features such as Age, BMI, Testosterone Level, Antral Follicle Count, and a binary feature for Menstrual Irregularity. The target variable is PCOS_Diagnosis (1 = PCOS, 0 = No PCOS), making this a binary classification task. This project investigates how well these features predict PCOS and how interpretable, reliable models can be built for healthcare applications. While features like Menstrual Irregularity and Antral Follicle Count showed strong correlations with PCOS, others such as BMI were less informative, prompting further experiments without them.
 
 Two models were developed and tested:
 
@@ -19,11 +17,7 @@ Logistic Regression — selected for its simplicity and interpretability
 
 Random Forest — chosen for its ability to model non-linear relationships
 
-The dataset was split 80/20 into training and testing sets. Both models were evaluated using accuracy, precision, recall, F1 score, ROC-AUC, and confusion matrices. Additionally, 5-fold cross-validation was performed to verify generalizability.
-
-Logistic Regression achieved ~91% accuracy, correctly identifying most PCOS cases — a key goal in clinical diagnosis. The Random Forest classifier achieved 100% accuracy on the test set, which raised concerns about overfitting. To investigate this, a smaller Random Forest model with just 3 trees and a depth of 3 was trained. It still achieved ~99.5% accuracy, confirming that strong signals exist in the data and the classes are well-separated.
-
-Further steps included visualizing feature correlations, interpreting decision trees, generating confusion matrices, and creating bar and histogram plots to demonstrate class separation. This project shows that with proper preprocessing and analysis, a small clinical dataset can be effectively modeled for disease prediction using simple, interpretable machine learning workflows.
+The dataset was split 80/20 into training and testing sets. Both models were evaluated using accuracy, precision, recall, F1 score, ROC-AUC, and confusion matrices. Additionally, 5-fold cross-validation was performed to verify generalizability. Logistic Regression achieved ~91% accuracy, correctly identifying most PCOS cases — a key goal in clinical diagnosis. The Random Forest classifier achieved 100% accuracy on the test set, which raised concerns about overfitting. To investigate this, a smaller Random Forest model with just 3 trees and a depth of 3 was trained. It still achieved ~99.5% accuracy, confirming that strong signals exist in the data and the classes are well-separated. Further steps included visualizing feature correlations, interpreting decision trees, generating confusion matrices, and creating bar and histogram plots to demonstrate class separation. This project shows that with proper preprocessing and analysis, a small clinical dataset can be effectively modeled for disease prediction using simple, interpretable machine learning workflows.
     
 ---
 
