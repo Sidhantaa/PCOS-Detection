@@ -105,7 +105,7 @@ Note: The scratch notebooks folder contains unpolished code meant for brainstorm
 
 ---
 
-### How to Reproduce Results and Software Setup
+### How to Reproduce Results & Software Setup
 
 How to Reproduce Results: 
 To reproduce all results in this project, run the Jupyter notebook Notebook.ipynb located in the Final Notebooks folder. This notebook walks through the entire pipeline — from loading the dataset to preprocessing, visualization, model training, evaluation, and cross-validation.
