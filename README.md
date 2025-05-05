@@ -6,7 +6,9 @@
 ---
 
 ## Overview
-The goal of this project is to predict whether a patient has Polycystic Ovary Syndrome (PCOS) **using clinical features** and supervised machine learning. The dataset, sourced from Kaggle, includes 1,000 patient records with numerical features such as Age, BMI, Testosterone Level, Antral Follicle Count, and a binary feature for Menstrual Irregularity. The target variable is **PCOS_Diagnosis (1 = PCOS, 0 = No PCOS)**, making this a binary classification task. This project investigates how well these features predict PCOS and how interpretable, reliable models can be built for healthcare applications. While features like Menstrual Irregularity and Antral Follicle Count showed strong correlations with PCOS, others such as BMI were less informative, prompting further experiments without them.
+The goal of this project is to predict whether a patient has Polycystic Ovary Syndrome (PCOS) using clinical features and supervised machine learning. The dataset, sourced from Kaggle, includes 1,000 patient records with numerical features such as Age, BMI, Testosterone Level, Antral Follicle Count, and a binary feature for Menstrual Irregularity. The target variable is PCOS_Diagnosis (1 = PCOS, 0 = No PCOS), making this a binary classification task. This project investigates how well these features predict PCOS and how interpretable and reliable models can be built for healthcare applications. While features like Menstrual Irregularity and Antral Follicle Count showed strong correlations with PCOS, others such as BMI were less informative, prompting further experiments without them.
+
+Model results were unexpectedly high — with Random Forest achieving 100% accuracy and Logistic Regression reaching ~91.5%. Even a much smaller Random Forest (3 trees, max depth 3) still scored ~99.5% accuracy. This suggested that the dataset may be overly clean and linearly separable, potentially not reflecting real-world complexity. These results prompted critical analysis into dataset structure and feature redundancy, helping assess model robustness and generalizability.
 
 ---
 
